@@ -4,8 +4,8 @@ function sleep(t) {
 }
  
 var interval = setInterval(function(){
-    var buttons = $("button.red-btn:contains('CLIP')");
-    var nextLink = $("span.next:contains('Next')");
+    var buttons = $("button.gray-btn:contains('CLIP')");
+    var nextLink = $("button.gray-btn:contains('Next')");
     var btn = $(buttons.splice(0, 1));
     console.log("Clicking: " + buttons.length + " ", btn);
     btn.trigger( "click" );
